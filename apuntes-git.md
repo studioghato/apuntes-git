@@ -112,7 +112,7 @@
        1. [Cómo despejar la consola](#como-despejar-la-consola)
 
 
-========================================================================================================================
+
 
 
 # Documentación de Git <a name="documentacion-de-git"></a>
