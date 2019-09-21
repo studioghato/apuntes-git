@@ -1577,6 +1577,10 @@ git branch <branch-name>                       // Crea una nueva rama a partir d
 git checkout -b <branch-name>                  // Crea una nueva rama a partir del HEAD de la rama actual y mueve el HEAD a ella directamente.
 git checkout -b <new-branch> <existing-branch> // Crea una nueva rama a partir del commit y/o nombre de rama que le indiques (aunque no estés ahí) y mueve el HEAD a ella directamente. Al indicar una referencia, este comando también lo puedes ejecutar estando en otra rama que no sea la base del nuevo fork.
 
+// RENOMBRAR
+git branch -m <new-branch-name>                   // Si estás en la rama que quieres renombrar
+git branch -m <old-branch-name> <new-branch-name> // Si estás en otra rama
+
 // ELIMINAR
 git branch -d <branch-name>                    // Elimina la rama si ya ha sido mergeada con el HEAD de la rama actual en la que te encuentras y/o con la rama "upstream" (si es que hay alguna); sino te avisa y no la elimina para que no pierdas ningún commit. (Fuente: https://stackoverflow.com/questions/7548926/git-and-the-branch-x-is-not-fully-merged-error/27427237#27427237).
 git branch -D <branch-name>                    // Elimina la rama aunque no haya sido mergeada.
